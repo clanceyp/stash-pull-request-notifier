@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Stash - status Popup</title>
+        <base target="_blank"/>
+        <link rel="stylesheet" type="text/css" href="lib/css/popup.css"/>
+	    <script type="text/javascript" src="lib/js/vendor/zepto.js"></script>
+	    <script type="text/javascript" src="lib/js/vendor/can.js"></script>
+	    <script type="text/javascript" src="lib/js/vendor/can.view.mustache.js"></script>
+	    <script type="text/javascript" src="lib/js/constants.js"></script>
+		<script type="text/javascript" src="lib/js/popup.js"></script>
+	    <style>
+		    /*
+		    sadly implementing this animation
+		    stops the dynamic refresh and stalls
+		    the page in chrome 26.0.1410.65
+		    Will try it again in a later build
+		    #refreshIcon {
+			    -webkit-animation-duration: 3s;
+			    -webkit-animation-iteration-count: 0;
+		    }
+			@-webkit-keyframes spin {
+			  from {
+			    -webkit-transform: rotate(0deg)
+			  }
+			  to {
+			   -webkit-transform: rotate(360deg)
+			  }
+			}
+
+		    body.loading #refreshIcon {
+			    -webkit-animation-name: spin;
+		    }
+			*/
+			p.loading {
+				display: none;
+				text-align: center;
+			}
+		    body.loading p.loading {
+			    display: block;
+		    }
+		    body.loading #display {
+			    opacity: 0;
+		    }
+	    </style>
+    </head>
+    <body>
+        <div id="wrapper">
+            <div id="refresh">
+                <span>Refresh</span><img id="refreshIcon" src="lib/i/reload19.png" alt="Refresh Button" />
+            </div>
+			<h1></h1>
+	        <p class="loading"><img src="lib/i/anim-bar.gif"/></p>
+	        <p class="message"></p>
+            <div id="display"></div>
+        </div>
+		<footer>
+			<nav>
+				<a href="options.html">Configuration</a>
+				| <a class="login" href="#"></a>
+				| <a href="https://chrome.google.com/webstore/detail/stash-pull-request-notifier" class="soft" id="extensionLink"></a>
+			</nav>
+		</footer>
+
+        <script id="template" type="text/mustache">
+
+        </script>
+    </body>
+</html>

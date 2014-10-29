@@ -1,0 +1,116 @@
+<rss version="0.92">
+    <channel>
+        <title>name</title>
+        <link>blah?requestId=11923</link>
+        <description>An XML representation of a search request</description>
+                <language>en-gb</language>
+                        <issue start="0" end="3" total="3"/>
+                <build-info>
+            <version>4.1.2</version>
+            <build-number>531</build-number>
+            <build-date>07-06-2010</build-date>
+            <edition>enterprise</edition>
+        </build-info>
+		<item>
+			<title>Title 001 Lorem ipsum dolor</title>
+			<link>link001</link>
+
+			<description>&lt;br/&gt;description 001 Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..</description>
+			<key>AAA-0001</key>
+			<summary>SUMMARY 001 Lorem ipsum dolor sit amet</summary>
+			<type />
+			<priority>1</priority>
+			<status />
+			<resolution />
+			<assignee username="testing1">test</assignee>
+			<boom>
+				<child>
+					<blah someattribute="blah">
+						<yadda/>
+					</blah>
+				</child>
+			</boom>
+		</item>
+		<item>
+			<title>Title 002 Neque porro</title>
+			<link>link002</link>
+
+			<description>&lt;br/&gt;description 002 Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..</description>
+			<key>AAA-0002</key>
+			<summary>SUMMARY 002 Lorem ipsum adipisicing elit</summary>
+			<type />
+			<priority>2</priority>
+			<status />
+			<resolution />
+			<assignee username="testing2">test</assignee>
+			<node>
+				<child>
+					<blah someattribute="blah">
+						<yadda/>
+					</blah>
+				</child>
+			</node>
+		</item>
+		<item>
+			<title>Title 003 Ipsum quia dolor sit</title>
+			<link>link003</link>
+
+			<description>&lt;br/&gt;description 003 Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..</description>
+			<key>AAA-0003</key>
+			<summary>SUMMARY 003 Lonsectetur adipisicing elit</summary>
+			<type />
+			<priority>3</priority>
+			<status />
+			<resolution />
+			<assignee username="testing6">test</assignee>
+			<node>
+				<child>
+					<blah someattribute="blah">
+						<yadda/>
+					</blah>
+				</child>
+			</node>
+		</item>
+		<item>
+			<title>Title 004 Lorem idipisicing elit</title>
+			<link>link004</link>
+
+			<description>&lt;br/&gt;description 004 Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..</description>
+			<key>AAA-0004</key>
+			<summary>SUMMARY 004 Lorem idipisicing elit qui dolorem </summary>
+			<type />
+			<priority>4</priority>
+			<status />
+			<resolution />
+			<assignee username="testing4">test</assignee>
+			<node>
+				<child>
+					<blah someattribute="blah">
+						<yadda/>
+					</blah>
+				</child>
+			</node>
+		</item>
+		<item>
+			<title>Title 005 Neque porro est qui</title>
+			<link>link005</link>
+
+			<description>&lt;br/&gt;description 005 Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..</description>
+			<key>AAA-0005</key>
+			<summary>SUMMARY 005 Lorem ipsum adipisicing elit</summary>
+			<type />
+			<priority>5</priority>
+			<status />
+			<resolution />
+			<assignee username="testing5">test</assignee>
+			<node>
+				<child>
+					<blah someattribute="blah">
+						<yadda/>
+					</blah>
+				</child>
+			</node>
+		</item>
+
+</channel>
+</rss>

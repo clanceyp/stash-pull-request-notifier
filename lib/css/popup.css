@@ -1,0 +1,105 @@
+@import "kulturista-web.css";
+html {
+}
+body {
+	background-attachment:fixed;
+	background-color: #DEF1FA;
+	background-image: url(http://www.atlassian.com/dms/wac/images/icons-home.png);
+	background-position: -200px bottom;
+	background-repeat: no-repeat;
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+}
+#wrapper {
+	min-height: 300px;
+	min-width: 320px;
+	padding:5px 15px 40px 15px ;
+}
+#refreshIcon {
+	border: 0;
+	height: 19px;
+	vertical-align: text-bottom;
+	width: 19px;
+}
+#refresh {
+	cursor: pointer;
+	float: right;
+}
+#refresh span {
+	opacity: 0;
+	-webkit-transition: opacity 300ms linear;
+}
+#refresh:hover span {
+    opacity: 0.5
+}
+h1,h2 {
+	color:#036;
+	font-family: "kulturista-web",serif;
+	font-size:1.6rem;
+	font-weight: normal;
+	margin:0 0 8px 0;
+}
+h1 {padding-top: 8px;}
+h2 {font-size: 1.2rem;}
+h3 {font-size: 0.8rem;margin:0 0 4px 0;padding:0;}
+summary::-webkit-details-marker {
+	color:#036;
+	font-size: 80%;
+}
+details[open] summary::-webkit-details-marker {
+	color: #800;
+}
+details[open] .item {
+	background-color:rgba(256,256,256,1);
+	background-image: url(http://www.atlassian.com/dms/wac/images/clouds-home.png);
+	background-position: bottom left;
+	background-repeat: no-repeat;
+	border-radius:5px;
+	margin:5px 0 5px 0;
+	padding:5px 10px 15px 10px;
+}
+details[open] p {
+	margin-top:0;
+}
+.left {
+	float:left;
+	width:50%;
+}
+.right {
+	display:inline-block;
+}
+summary {
+	cursor:pointer;
+	outline:none;
+	margin-top:4px;
+}
+#display {
+	font-size: 0.8rem;
+	padding-left:2px;
+	width:340px;
+}
+a {
+	color:#036;
+}
+*.nav a, nav a, h1 a, h2 a, h3 a, h4 a  {
+	text-decoration: none;
+}
+* a:hover,* a.focus {text-decoration: underline;}
+h1 a {
+	border: 0 none!important;
+	outline: 0 none!important;
+}
+*.soft {
+	opacity:0.5;
+}
+footer {
+	background-color: #fff;
+	border-top:1px dashed #888;
+	bottom:0;
+	font-size: 0.8rem;
+	padding:8px 0;
+	position: fixed;
+	text-align: center;
+	width:100%;
+}

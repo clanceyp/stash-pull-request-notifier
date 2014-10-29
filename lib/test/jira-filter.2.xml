@@ -1,0 +1,56 @@
+<rss version="0.92">
+    <channel>
+        <title>name</title>
+        <link>blah?requestId=11923</link>
+        <description>An XML representation of a search request</description>
+                <language>en-gb</language>
+                        <issue start="0" end="3" total="3"/>
+                <build-info>
+            <version>4.1.2</version>
+            <build-number>531</build-number>
+            <build-date>07-06-2010</build-date>
+            <edition>enterprise</edition>
+        </build-info>
+
+		<item>
+			<title>Title 003 Ipsum quia dolor sit</title>
+			<link>link003</link>
+
+			<description>description 003 Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..</description>
+			<key>AAA-0003</key>
+			<summary>SUMMARY 003 Lonsectetur adipisicing elit</summary>
+			<type />
+			<priority id="4">3</priority>
+			<status />
+			<resolution />
+			<assignee username="testing6">test</assignee>
+		</item>
+		<item>
+			<title>Title 004 Lorem idipisicing elit</title>
+			<link>link004</link>
+
+			<description>description 004 Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..</description>
+			<key>AAA-0004</key>
+			<summary>SUMMARY 004 Lorem idipisicing elit qui dolorem </summary>
+			<type />
+			<priority id="4">4</priority>
+			<status />
+			<resolution />
+			<assignee username="testing4">test</assignee>
+		</item>
+		<item>
+			<title>Title 005 Neque porro est qui</title>
+			<link>link005</link>
+
+			<description>description 005 Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..</description>
+			<key>AAA-0005</key>
+			<summary>SUMMARY 005 Lorem ipsum adipisicing elit</summary>
+			<type />
+			<priority id="5">5</priority>
+			<status />
+			<resolution />
+			<assignee username="testing5">test</assignee>
+		</item>
+
+</channel>
+</rss>

@@ -1,0 +1,81 @@
+<rss version="0.92">
+    <channel>
+        <title>name</title>
+        <link>blah?requestId=11923</link>
+        <description>An XML representation of a search request</description>
+                <language>en-gb</language>
+                        <issue start="0" end="3" total="3"/>
+                <build-info>
+            <version>4.1.2</version>
+            <build-number>531</build-number>
+            <build-date>07-06-2010</build-date>
+            <edition>enterprise</edition>
+        </build-info>
+		<item>
+			<title>Title 011 Lorem ipsum dolor</title>
+			<link>link011</link>
+
+			<description>description 001 Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..</description>
+			<key>ABB-0011</key>
+			<summary>SUMMARY 011 Lorem ipsum dolor sit amet</summary>
+			<type />
+			<priority id="2">1</priority>
+			<status />
+			<resolution />
+			<assignee username="testing1">test</assignee>
+		</item>
+		<item>
+			<title>Title 012 Neque porro</title>
+			<link>link012</link>
+
+			<description>description 002 Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..</description>
+			<key>ABB-0012</key>
+			<summary>SUMMARY 012 Lorem ipsum adipisicing elit</summary>
+			<type />
+			<priority id="4">2</priority>
+			<status />
+			<resolution />
+			<assignee username="testing21">test</assignee>
+		</item>
+		<item>
+			<title>Title 013 Ipsum quia dolor sit</title>
+			<link>link013</link>
+
+			<description>description 013 Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..</description>
+			<key>ABB-0013</key>
+			<summary>SUMMARY 013 Lonsectetur adipisicing elit</summary>
+			<type />
+			<priority id="4">3</priority>
+			<status />
+			<resolution />
+			<assignee username="testing61">test</assignee>
+		</item>
+		<item>
+			<title>Title 014 Lorem idipisicing elit</title>
+			<link>link014</link>
+
+			<description>description 014 Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..</description>
+			<key>ABB-0014</key>
+			<summary>SUMMARY 014 Lorem idipisicing elit qui dolorem </summary>
+			<type />
+			<priority id="4">4</priority>
+			<status />
+			<resolution />
+			<assignee username="testing41">test</assignee>
+		</item>
+		<item>
+			<title>Title 015 Neque porro est qui</title>
+			<link>link015</link>
+
+			<description>description 015 Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..</description>
+			<key>ABB-0015</key>
+			<summary>SUMMARY 015 Lorem ipsum adipisicing elit</summary>
+			<type />
+			<priority id="5">5</priority>
+			<status />
+			<resolution />
+			<assignee username="testing5">test</assignee>
+		</item>
+
+</channel>
+</rss>
