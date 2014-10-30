@@ -1,5 +1,5 @@
 {
-	"name": "Stash review notifier"
+	"name": "Atlassian Stash Review Notifier"
 	,"version": "0.2"
 	,"manifest_version": 2
 	,"description": "Display pull request notifications"
