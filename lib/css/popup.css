@@ -43,6 +43,15 @@ h1,h2 {
 h1 {padding-top: 8px;}
 h2 {font-size: 1.2rem;}
 h3 {font-size: 0.8rem;margin:0 0 4px 0;padding:0;}
+summary {
+	cursor:pointer;
+	margin-top:4px;
+	outline:none;
+	overflow-x: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	width: 90%;
+}
 summary::-webkit-details-marker {
 	color:#036;
 	font-size: 80%;
@@ -69,15 +78,14 @@ details[open] p {
 .right {
 	display:inline-block;
 }
-summary {
-	cursor:pointer;
-	outline:none;
-	margin-top:4px;
-}
 #display {
 	font-size: 0.8rem;
 	padding-left:2px;
 	width:340px;
+}
+pre {
+	overflow-x: hidden;
+	text-overflow: ellipsis;
 }
 a {
 	color:#036;
