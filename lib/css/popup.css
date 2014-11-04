@@ -78,6 +78,11 @@ details[open] p {
 .right {
 	display:inline-block;
 }
+.cell {
+	display: inline-block;
+	vertical-align: top;
+	width: 49%;
+}
 #display {
 	font-size: 0.8rem;
 	padding-left:2px;
