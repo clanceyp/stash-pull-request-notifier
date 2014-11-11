@@ -1,11 +1,11 @@
 {  
-   "size":1,
+   "size":2,
    "limit":10,
    "isLastPage":true,
    "values":[{  
-         "id":596,
+         "id":5961,
          "version":18,
-         "title":"Feature/TDD-1138 welcome page list of dynamic content",
+         "title":"Feature/TDD-1001 update dispatcher config",
          "description":"* TDD-1135 - new list template\n* TDD-1136 - new list to display any type of page and new selector with simplified markup. (sip)\n* TDD-1137 - servlet to populate list of available templates on list dialog\n* TDD-1138 - renaming items\n* TDD-1139 - refactoring and bugfixes",
          "state":"OPEN",
          "open":true,
