@@ -4,7 +4,7 @@ html {
 body {
 	background-attachment:fixed;
 	background-color: #DEF1FA;
-	background-image: url(http://www.atlassian.com/dms/wac/images/icons-home.png);
+	background-image: url(images/icons-home.png);
 	background-position: -200px bottom;
 	background-repeat: no-repeat;
 	margin: 0;
@@ -61,7 +61,7 @@ details[open] summary::-webkit-details-marker {
 }
 details[open] .item {
 	background-color:rgba(256,256,256,1);
-	background-image: url(http://www.atlassian.com/dms/wac/images/clouds-home.png);
+	background-image: url(images/clouds-home.png);
 	background-position: bottom left;
 	background-repeat: no-repeat;
 	border-radius:5px;
