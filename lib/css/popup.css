@@ -33,6 +33,12 @@ body {
 #refresh:hover span {
     opacity: 0.5
 }
+.is-last-page-warning {
+	color: rgb(180,0,0);
+}
+.is-last-page-true .is-last-page-warning {
+	display: none;
+}
 h1,h2 {
 	color:#036;
 	font-family: "kulturista-web",serif;
