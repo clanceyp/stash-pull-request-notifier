@@ -1,14 +1,15 @@
 {
 	"name": "Atlassian Stash Review Notifier"
-	,"version": "1.0.3"
+	,"version": "1.0.4"
 	,"manifest_version": 2
 	,"description": "Display pull request notifications"
 	,"icons": { 
-		"32": "lib/i/octicons-git-merge.32.png"
-		,"48": "lib/i/octicons-git-merge.48.png"
+		"32": "lib/i/octicons-git-request.32.png"
+		,"48": "lib/i/octicons-git-request.o.48.png"
+		,"128": "lib/i/octicons-git-request.o.128.png"
 	}
 	,"browser_action": {
-		"default_icon": "lib/i/octicons-git-merge.32.png"
+		"default_icon": "lib/i/octicons-git-request.32.png"
 		,"default_title": "Stash review notifier"
 		,"default_popup": "popup.html"
 	}
