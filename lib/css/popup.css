@@ -35,10 +35,10 @@ body {
 }
 .is-last-page-warning {
 	color: rgb(180,0,0);
-}
-.is-last-page-undefined .is-last-page-warning, 
-.is-last-page-true .is-last-page-warning {
 	display: none;
+}
+.is-last-page-false .is-last-page-warning {
+	display: block;
 }
 h1,h2 {
 	color:#036;
@@ -66,7 +66,8 @@ summary::-webkit-details-marker {
 details[open] summary::-webkit-details-marker {
 	color: #800;
 }
-details[open] .item {
+details[open]:not([class]) div.item, /* 1.0.x syntax */
+details[open] .item__content {
 	background-color:rgba(256,256,256,1);
 	background-image: url(images/clouds-home.png);
 	background-position: bottom left;
@@ -102,8 +103,11 @@ pre {
 a {
 	color:#036;
 }
-*.nav a, nav a, h1 a, h2 a, h3 a, h4 a  {
+*.nav a, nav a, h1 a {
 	text-decoration: none;
+}
+h2 a:hover, h3 a:hover {
+	opacity: 0.7;
 }
 * a:hover,* a.focus {text-decoration: underline;}
 h1 a {
@@ -123,3 +127,32 @@ footer {
 	text-align: center;
 	width:100%;
 }
+.differentiate-approved-true
+.item--reviewer-approved-true {
+	opacity: 0.5;
+	transition: opacity 300ms linear;
+	-webkit-transition: opacity 300ms linear;
+}
+.differentiate-approved-true
+.item--reviewer-approved-true:hover {
+	opacity: 1;
+}
+.item__reviewers-reviewer {
+	display: block;
+}
+.item__reviewers-reviewer--approved-true::after {
+	background-color: green; 
+	border-radius: 50%;
+	color: white;
+	content: "\2713" ;
+	display: inline-block;
+	margin: 0 2px ;
+	min-width: 1.1em;
+	text-align: center;
+}
+
+
+
+
+
+
