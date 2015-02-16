@@ -146,8 +146,8 @@ footer {
 	color: white;
 	content: "\2713" ;
 	display: inline-block;
-	margin: 0 2px ;
-	min-width: 1.1em;
+	margin: 0 0 0 5px ;
+	min-width: 1.2em;
 	text-align: center;
 }
 
