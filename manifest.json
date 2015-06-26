@@ -1,9 +1,9 @@
 {
 	"name": "Atlassian Stash Review Notifier"
-	,"version": "1.1.5"
+	,"version": "1.1.7"
 	,"manifest_version": 2
 	,"description": "Display pull request notifications"
-	,"icons": { 
+	,"icons": {
 		"32": "lib/i/octicons-git-request.32.png"
 		,"48": "lib/i/octicons-git-request.o.48.png"
 		,"128": "lib/i/octicons-git-request.o.128.png"

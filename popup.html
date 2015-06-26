@@ -44,6 +44,20 @@
 		    body.loading #display {
 			    opacity: 0;
 		    }
+            .author { display: none }
+            .author__heading {
+                border-top: 1px dashed #cecece;
+                padding-top: 8px;
+            }
+            .is-author-visible-true.logged-in-true .author {
+                display: block;
+            }
+            .logged-in-true .login {
+                display: none;
+            }
+            .logged-in-false .configuration {
+                display: none;
+            }
 	    </style>
     </head>
     <body>
@@ -55,13 +69,15 @@
 			<p class="is-last-page-warning">ATTENTION, you have too many pull request not all of them are displayed here!</p>
 	        <p class="loading"><img src="lib/i/anim-bar.gif"/></p>
 	        <p class="message"></p>
-            <div id="display"></div>
+            <div class="display"></div>
+            <h2 class="author__heading author">Created</h2>
+            <div class="author__display author"></div>
         </div>
         <footer>
 			<nav>
-				<a href="options.html">Configuration</a>
-				| <a class="login" href="#"></a>
-				| <a href="https://chrome.google.com/webstore/detail/atlassian-stash-review-no/bfkikmfkcnoogbhhebglhagdpmhnblmk" class="soft" id="extensionLink"></a>
+				<a class="configuration" href="options.html">Configuration</a>
+				<a class="login" href="#"></a>
+				| <a href="https://chrome.google.com/webstore/detail/atlassian-stash-review-no/bfkikmfkcnoogbhhebglhagdpmhnblmk" class="soft extensionLink"></a>
 			</nav>
 		</footer>
 
