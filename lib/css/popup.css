@@ -141,7 +141,7 @@ footer {
 	display: block;
 }
 .item__reviewers-reviewer--approved-true::after {
-	background-color: green; 
+	background-color: green;
 	border-radius: 50%;
 	color: white;
 	content: "\2713" ;
@@ -151,8 +151,17 @@ footer {
 	text-align: center;
 }
 
-
-
-
-
-
+.author { display: none }
+.author__heading {
+	border-top: 1px dashed #cecece;
+	padding-top: 8px;
+}
+.is-author-visible-true.logged-in-true .author {
+	display: block;
+}
+.logged-in-true .login {
+	display: none;
+}
+.logged-in-false .configuration {
+	display: none;
+}

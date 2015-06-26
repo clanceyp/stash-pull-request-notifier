@@ -1,6 +1,6 @@
 {
 	"name": "Atlassian Stash Review Notifier"
-	,"version": "1.1.7"
+	,"version": "1.1.8"
 	,"manifest_version": 2
 	,"description": "Display pull request notifications"
 	,"icons": {
