@@ -91,12 +91,14 @@ details[open] p {
 	vertical-align: top;
 	width: 49%;
 }
-#display {
+.display {
 	font-size: 0.8rem;
+	margin-bottom: 1rem;
 	padding-left:2px;
 	width:340px;
 }
 pre {
+	max-width: 400px;
 	overflow-x: hidden;
 	text-overflow: ellipsis;
 }

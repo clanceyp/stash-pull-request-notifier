@@ -44,6 +44,9 @@
 		    body.loading #display {
 			    opacity: 0;
 		    }
+            body:not([author-items-length='0']) .author__no-items {
+                display: none;
+            }
 	    </style>
     </head>
     <body>
@@ -57,7 +60,7 @@
 	        <p class="message"></p>
             <div class="display"></div>
             <h2 class="author__heading author">Created</h2>
-            <div class="author__display author"></div>
+            <div class="author__display author"><span class="author__no-items">You have no active pull resquests</span></div>
         </div>
         <footer>
 			<nav>
