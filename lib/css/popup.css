@@ -61,10 +61,12 @@ summary {
 }
 summary::-webkit-details-marker {
 	color:#036;
+	float: left;
 	font-size: 80%;
+	margin: 4px 3px 0 3px;
 }
 details[open] summary::-webkit-details-marker {
-	color: #800;
+	color: #080;
 }
 details[open]:not([class]) div.item, /* 1.0.x syntax */
 details[open] .item__content {
@@ -140,6 +142,9 @@ footer {
 .item--reviewer-approved-true:hover {
 	opacity: 1;
 }
+.item--reviewer-approved-true summary::-webkit-details-marker {
+	color: #080;
+}
 .item__reviewers-reviewer {
 	display: block;
 }
@@ -167,8 +172,14 @@ footer {
 	mask-size: 100% 100%;
 	width: 16px;
 }
+.author__display .item__snooze {
+	display: none;
+}
 .item--snoozed .item__snooze {
 	background-color: #800;
+}
+.item--snoozed:not([open]) summary::-webkit-details-marker {
+	color: #800;
 }
 .author { display: none }
 .author__heading {
