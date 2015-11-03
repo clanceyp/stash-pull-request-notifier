@@ -65,7 +65,7 @@ summary::-webkit-details-marker {
 	font-size: 80%;
 	margin: 4px 3px 0 3px;
 }
-details[open] summary::-webkit-details-marker {
+details[open]:not(.item--snoozed) summary::-webkit-details-marker {
 	color: #080;
 }
 details[open]:not([class]) div.item, /* 1.0.x syntax */
@@ -178,7 +178,7 @@ footer {
 .item--snoozed .item__snooze {
 	background-color: #800;
 }
-.item--snoozed:not([open]) summary::-webkit-details-marker {
+.item--snoozed summary::-webkit-details-marker {
 	color: #800;
 }
 .author { display: none }
