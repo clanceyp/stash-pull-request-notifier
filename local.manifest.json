@@ -1,7 +1,7 @@
 {
 	"name": "Atlassian Stash Review Notifier"
 	,"short_name": "Stash queue"
-	,"version": "1.4.0"
+	,"version": "1.4.2"
 	,"manifest_version": 2
 	,"description": "Display pull request notifications"
 	,"icons": {
@@ -31,6 +31,12 @@
 		,"https://*/*"
 		,"background"
 		,"notifications"
+	],
+	"content_scripts": [{
+		"matches": ["*://*/*"],
+		"css": ["lib/css/content_css.css"],
+		"js": ["lib/js/vendor/zepto.js", "lib/js/content_script.js"]
+		}
 	],
 	"web_accessible_resources": [
 	    "lib/i/octicons-git-merge.48.png"
