@@ -1,7 +1,7 @@
 {
 	"name": "Atlassian Stash Review Notifier"
 	,"short_name": "Stash queue"
-	,"version": "1.4.0"
+	,"version": "1.4.5"
 	,"manifest_version": 2
 	,"description": "Display pull request notifications"
 	,"icons": {
@@ -31,8 +31,9 @@
 		,"https://*/*"
 		,"background"
 		,"notifications"
-	],
-	"web_accessible_resources": [
-	    "lib/i/octicons-git-merge.48.png"
+		,"activeTab"
+	]
+	,"web_accessible_resources": [
+		"lib/i/octicons-git-merge.48.png"
 	]
 }
