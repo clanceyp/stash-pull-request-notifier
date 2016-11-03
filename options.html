@@ -7,7 +7,10 @@
 	<script src="lib/js/vendor/underscore.js"></script>
 	<script src="lib/js/constants.js"></script>
 	<script src="lib/js/options.js"></script>
+	<script src="lib/prisum/prism.js"></script>
 	<link rel="stylesheet" href="lib/css/options.css"/>
+	<link rel="stylesheet" href="lib/prisum/prism.css">
+	<!-- http://prismjs.com/download.html (dark theme) -->
 
 	<title>Extension options</title>
 
@@ -59,6 +62,17 @@
 		padding: 30px 0;
 		text-align: center;
 	}
+
+	.slim p {
+		width: 80%;
+	}
+	.ghost {
+		font-size: 80%;
+		opacity: 0.6;
+	}
+	.fr {
+		float:right;
+	}
 	</style>
 	<!-- see http://codepo8.github.com/css-fork-on-github-ribbon/ -->
 	<style>#forkongithub a{background:#005;color:#fff;text-decoration:none;font-family:arial, sans-serif;text-align:center;font-weight:bold;padding:5px 40px;font-size:1rem;line-height:2rem;position:relative;transition:0.5s;}#forkongithub a:hover{background:#060;color:#fff;}#forkongithub a::before,#forkongithub a::after{content:"";width:100%;display:block;position:absolute;top:1px;left:0;height:1px;background:#fff;}#forkongithub a::after{bottom:1px;top:auto;}@media screen and (min-width:800px){#forkongithub{position:absolute;display:block;top:0;right:0;width:200px;overflow:hidden;height:200px;}#forkongithub a{width:200px;position:absolute;top:60px;right:-60px;transform:rotate(45deg);-webkit-transform:rotate(45deg);box-shadow:4px 4px 10px rgba(0,0,0,0.8);}}</style>
@@ -74,13 +88,13 @@
 				<ul>
 					<li><a href="#sectionSettings">Settings</a></li>
 					<li><a href="#sectionSettingsAdvanced">Advanced settings</a></li>
-					<li><a href="#sectionSettingsStash">Stash insert conf</a></li>
+					<li><a href="#sectionSettingsStash">Stash insert</a></li>
 					<li><a href="#sectionDonate">Donate!</a></li>
 					<li><a href="#sectionHowTo">About</a></li>
 				</ul>
 			</nav>
-			<section id="sectionHowTo" class="hidden">
-				<div style="width:80%">
+			<section id="sectionHowTo" class="hidden slim">
+				<div>
 					<h2>About</h2>
 					<p><strong id="appName"></strong></p>
 					<p>version: <strong id="appVersion"></strong></p>
@@ -109,6 +123,8 @@
 						To reset all the setting back to the default setting, click on the
 						"Reset default options" button.
 					</p>
+					<h4>Tests</h4>
+					<iframe src="lib/test/jasmine/SpecRunner.html" frameborder="0" height="240px" width="100%"></iframe>
 				</div>
 			</section>
 			<section id="sectionDonate" class="hidden relative">
@@ -123,7 +139,7 @@
 						<img alt="" border="0" src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif" width="1" height="1">
 					</form>
 					<div style="width:300px;height:300px;overflow:hidden;position: relative;border:1px solid rgba(83,103,141,1);margin-bottom:20px;"><img src="lib/i/me-2013.png" style="width:400px;position: absolute; top:-20px;left:-40px" /></div>
-					<p><a href="lib/test/jasmine/SpecRunner.html">Run tests</a></p>
+					<!-- <p><a href="lib/test/jasmine/SpecRunner.html">Run tests</a></p> -->
 					<span id="forkongithub"><a href="https://github.com/clanceyp/stash-pull-request-notifier">Fork me on GitHub</a></span>
 
 				</fieldset>
@@ -153,9 +169,27 @@
 				</section>
 				<section id="sectionSettingsStash" class="hidden">
 
-					<h2>Stash insert config</h2>
+					<h2>Stash insert configuration</h2>
 
 					<fieldset class="advancedStash"></fieldset>
+
+					<p>Example CSS; show how many times you have previously approved and show perviously approved page in post-it pink</p>
+					<pre class="code  language-css"><code class="language-css">html[stash-pull-request-notifier] .previously-approved-counter {
+	margin-left: 6px;
+}
+html[stash-pull-request-notifier] .previously-approved-counter::before {
+	content: attr(data-counter);
+}
+html[stash-pull-request-notifier][data-previously-approved='true'] .aui-page-panel {
+	background-color: #ffe;
+}</code></pre>
+					<p>Example JS; dblclick on lozenge to alert full branch name and disable merge button.</p>
+					<pre class="code  language-javascript"><code class="language-javascript">$("body").on("dblclick",".pull-request-branches .aui-lozenge[data-ref-tooltip]", function(){
+	prompt("Branch", $(this).data("ref-tooltip"));
+});
+$(".aui-button.merge-pull-request").prop("disabled","true");</code></pre>
+					<p class="ghost fr"></p>
+					<p class="ghost"><a class="fr" href="http://prismjs.com/" target="_blank">highlighting by prismjs</a>(Don't include script comments, they can break)</p>
 					<p class="button">
 						<input type="reset" id="resetButton02" value="Reset default options"/>
 					</p>
