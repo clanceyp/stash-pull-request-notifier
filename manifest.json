@@ -1,7 +1,7 @@
 {
-	"name": "Atlassian Stash Review Notifier"
+	"name": "Stash Review Notifier"
 	,"short_name": "Stash queue"
-	,"version": "1.5.7"
+	,"version": "1.5.8"
 	,"manifest_version": 2
 	,"description": "Display pull request notifications"
 	,"icons": {
