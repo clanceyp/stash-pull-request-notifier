@@ -1,9 +1,9 @@
 {
-	"name": "Stash Review Notifier"
-	,"short_name": "Stash queue"
-	,"version": "1.5.8"
+	"name": "Atlassian Pull Request Notifier"
+	,"short_name": "PR queue"
+	,"version": "1.6.0"
 	,"manifest_version": 2
-	,"description": "Display pull request notifications"
+	,"description": "Display pull request notifications from Stash and Bitbucket"
 	,"icons": {
 		"32": "lib/i/octicons-git-request.32.png"
 		,"48": "lib/i/octicons-git-request.o.48.png"
@@ -11,7 +11,7 @@
 	}
 	,"browser_action": {
 		"default_icon": "lib/i/octicons-git-request.32.png"
-		,"default_title": "Stash review notifier"
+		,"default_title": "Atlassian review notifier"
 		,"default_popup": "popup.html"
 	}
 	,"background":{
