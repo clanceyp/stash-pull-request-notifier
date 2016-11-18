@@ -1,9 +1,0 @@
-.previously-approved-counter {
-    margin-left: 6px;
-}
-.previously-approved-counter::before {
-    content: attr(data-counter);
-}
-.aui-page-panel[data-previously-approved='true'] {
-    background-color: #ffe;
-}
