@@ -173,21 +173,31 @@
 
 					<fieldset class="advancedStash"></fieldset>
 
-					<p>Example CSS; show how many times you have previously approved and show perviously approved page in post-it yellow</p>
+					<p>Example CSS; show how many times you have previously approved</p>
 					<pre class="code  language-css"><code class="language-css">html[stash-pull-request-notifier] .previously-approved-counter {
-	margin-left: 6px;
+	overflow-y: hidden;
 }
 html[stash-pull-request-notifier] .previously-approved-counter::before {
+	color: #F8F8F8;
 	content: attr(data-counter);
+	font: bold 20cm/20cm monospace, sans-serif;
+	position: absolute;
+	right: -2.5cm;
+	top: -4cm;
+	z-index: 0;
+}
+html[stash-pull-request-notifier] .previously-approved-counter .aui-page-panel-inner {
+	position: relative;
+	z-index: 1;
 }
 html[stash-pull-request-notifier][data-previously-approved='true'] .aui-page-panel {
 	background-color: #ffe;
 }</code></pre>
-					<p>Example JS; dblclick on lozenge to alert full branch name and disable merge button.</p>
-					<pre class="code  language-javascript"><code class="language-javascript">$("body").on("dblclick",".pull-request-branches .aui-lozenge[data-ref-tooltip]", function(){
-	prompt("Branch", $(this).data("ref-tooltip"));
+					<p>Example JS; dblclick on lozenge to prompt full branch name, add previously-approved-counter class name to body for above CSS.</p>
+					<pre class="code  language-javascript"><code class="language-javascript">$(".branch-name").on("dblclick", function(){
+	prompt("Branch", $(this).text() );
 });
-$(".aui-button.merge-pull-request").prop("disabled","true");</code></pre>
+$(".aui-page-panel").addClass("previously-approved-counter");</code></pre>
 					<p class="ghost fr"></p>
 					<p class="ghost"><a class="fr" href="http://prismjs.com/" target="_blank">highlighting by prismjs</a>(Don't include script comments, they can break)</p>
 					<p class="button">
