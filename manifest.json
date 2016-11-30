@@ -1,7 +1,7 @@
 {
 	"name": "Atlassian Pull Request Notifier"
 	,"short_name": "PR queue"
-	,"version": "1.6.5"
+	,"version": "2.0.1"
 	,"manifest_version": 2
 	,"description": "Display pull request notifications from Stash and Bitbucket"
 	,"icons": {
@@ -20,11 +20,13 @@
 			,"lib/js/vendor/underscore.js"
 			,"lib/js/vendor/zepto.js"
 			,"lib/js/vendor/can.js"
+			,"lib/js/manifest.js"
+			,"lib/options/js/background.js"
 			,"lib/js/background.js"
 		]
 	}
 	,"content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'"
-	,"options_page": "options.html"
+	,"options_page": "/lib/options/index.html"
 	,"permissions": [
 		"tabs"
 		,"http://*/*"

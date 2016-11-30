@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<script src="/lib/options/js/vendor/zepto.js"></script>
+	<script src="/lib/options/js/vendor/knockout.js"></script>
+	<script src="/lib/options/js/vendor/knockout.reactor.js"></script>
+	<script src="/lib/options/js/vendor/underscore.js"></script>
+	<script src="/lib/js/manifest.js"></script>
+	<script src="/lib/options/js/options.js"></script>
+	<link rel="stylesheet" href="/lib/options/css/help.css"/>
+	<link rel="stylesheet" href="/lib/css/options.css"/>
+	<link rel="stylesheet" href="/lib/options/css/options.css"/>
+
+	<title>Extension options</title>
+
+	<!-- see http://codepo8.github.com/css-fork-on-github-ribbon/ -->
+	<style>
+		#forkongithub a{background:#333;color:#fff;text-decoration:none;font-family:arial,sans-serif;text-align:center;font-weight:bold;padding:5px 40px;font-size:1rem;line-height:2rem;position:relative;transition:0.5s;}
+		#forkongithub a:hover{background:#c11;color:#fff;}
+		#forkongithub a::before,#forkongithub a::after{content:"";width:100%;display:block;position:absolute;top:1px;left:0;height:1px;background:#fff;}
+		#forkongithub a::after{bottom:1px;top:auto;}
+		@media screen and (max-width:400px){
+			#forkongithub,
+			#forkongithub a {display:block;padding: 0;}
+			#forkongithub a {margin: 0 -12px;}
+		}
+		@media screen and (min-width:400px){
+			#forkongithub {position:absolute;display:block;top:-16px;right:-16px;width:200px;overflow:hidden;height:200px;z-index:0;}
+			#forkongithub a {width:200px;position:absolute;top:60px;right:-60px;transform:rotate(45deg);
+				-webkit-transform:rotate(45deg);-ms-transform:rotate(45deg);-moz-transform:rotate(45deg);-o-transform:rotate(45deg);
+				box-shadow:4px 4px 10px rgba(0,0,0,0.5);}
+		}
+	</style>
+</head>
+<body class="body">
+	<div class="settings">
+		<header class="header">
+			<h1 class="header__heading"></h1>
+			<p>
+				Use the form below to enable/disable features
+			</p>
+		</header>
+		<nav class="settings__navigation settings__navigation--fixed">
+			<ul class="settings__navigation-list">
+				<li class="last settings__navigation-item"><a class="settings__navigation-link" href="#sectionAbout">About</a></li>
+			</ul>
+		</nav>
+		<main class="main">
+
+			<form class="settings__form">
+				<fieldset id="sectionAbout" class="settings__section relative">
+					<div>
+						<h2>About</h2>
+						<p><strong class="appName"></strong></p>
+						<p>version: <strong class="appVersion"></strong></p>
+						<h3>Getting started</h3>
+						<p>This extension displays a queue of STASH pull requests you have been named in.</p>
+						<h4>Setup</h4>
+						<p>
+							To display pull requests, the first thing you need to do
+							is login to your Stash/Bitbucket server instance and add your Stash/Bitbucket server URL
+							to the options.
+						</p>
+						<h4>Tests</h4>
+						<iframe src="/lib/test/jasmine/SpecRunner.html" frameborder="0" height="240px" width="100%"></iframe>
+						<p><a class="ghost" href="/lib/test/jasmine/SpecRunner.html">pull request tests</a></p>
+					</div>
+				</fieldset>
+
+
+
+			</form>
+		</main>
+	</div>
+	<span id="forkongithub"><a href="https://github.com/clanceyp/chrome-extension-settings-form">Fork me on GitHub</a></span>
+</body>
+</html>
