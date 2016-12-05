@@ -189,9 +189,3 @@ footer {
 .is-author-visible-true.logged-in-true .author {
 	display: block;
 }
-.logged-in-true .login {
-	display: none;
-}
-.logged-in-false .configuration {
-	display: none;
-}

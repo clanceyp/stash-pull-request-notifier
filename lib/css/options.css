@@ -15,10 +15,12 @@
 	opacity: 1;
 }
 html textarea {
+	box-sizing: border-box;
 	min-height: 200px;
 	width: 80%;
 }
 html input[type=text] {
+	box-sizing: border-box;
 	max-width: 90%;
 	width: 400px;
 }
@@ -34,4 +36,19 @@ textarea.code {
 }
 html h1, html a:link {
 	color: var(--hi-light-colour);
+}
+
+.inline-help {
+	background-color: #fff8e7;
+	border: 1px solid #e90;
+	box-sizing: border-box;
+	padding: 5px;
+	max-width: 90%;
+	width: 400px;
+}
+.inline-help > :first-child {
+	margin-top: 0;
+}
+dd {
+	margin-bottom: 4px;
 }
