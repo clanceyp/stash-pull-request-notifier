@@ -5,7 +5,9 @@ body {
     background-image: url(../i/cog-02.svg);
     background-size:0;
 }
-h1, a:link {
+h1,
+a:link,
+a:visited {
     color: #005;
 }
 h2, .settings__form-label {
