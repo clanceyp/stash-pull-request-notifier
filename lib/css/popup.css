@@ -173,7 +173,7 @@ footer {
 	width: 16px;
 }
 .author__display .item__snooze {
-	display: none;
+
 }
 .item--snoozed .item__snooze {
 	background-color: #800;
