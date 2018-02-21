@@ -7,6 +7,7 @@
 	<script src="/lib/options/js/vendor/underscore.js"></script>
 	<script src="/lib/js/manifest.js"></script>
 	<script src="/lib/options/js/options.js"></script>
+	<script src="/lib/options/js/validate.js"></script>
 	<link rel="stylesheet" href="/lib/options/css/help.css"/>
 	<link rel="stylesheet" href="/lib/css/options.css"/>
 	<link rel="stylesheet" href="/lib/options/css/options.css"/>
@@ -19,6 +20,12 @@
 		#forkongithub a:hover{background:#c11;color:#fff;}
 		#forkongithub a::before,#forkongithub a::after{content:"";width:100%;display:block;position:absolute;top:1px;left:0;height:1px;background:#fff;}
 		#forkongithub a::after{bottom:1px;top:auto;}
+		.valid {
+			outline: 2px solid green;
+		}
+		.invalid {
+			 outline: 2px solid red;
+		}
 		@media screen and (max-width:400px){
 			#forkongithub,
 			#forkongithub a {display:block;padding: 0;}
