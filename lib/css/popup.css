@@ -141,18 +141,20 @@ footer {
 .author .differentiate-approved-true .item--reviewer-approved-true:hover {
 	opacity: 1;
 }
-.author .item summary:before,
+.author summary:before,
 .author .item--reviewer-approved-true summary::-webkit-details-marker {
 	color: #080;
 }
 .author .item--reviewer-approved-true summary:before {
-	content: "\221E\2713" /* infinity - tick */
+	content: "\221E"; /* infinity */
+	letter-spacing: -3px;
+	margin-right: 5px;
 }
 .author .item--reviewer-approved-true.item--reviewer-approved-count-1 summary:before {
 	content: "\2713" /* tick */
 }
 .author .item--reviewer-approved-true.item--reviewer-approved-count-2 summary:before {
-	content: "\2713\2713"
+	content: "\2713\2713";
 }
 .author .item--reviewer-approved-true.item--reviewer-approved-count-3 summary:before {
 	content: "\2713\2713\2713"

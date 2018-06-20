@@ -22,7 +22,7 @@
     -webkit-transition-property: opacity scale;
     -webkit-transition-duration: 100ms;
     -webkit-transition-timing-function: linear;
-    -webkit-transform :scale(0.5);
+    -webkit-transform :scale(0.1);
     -webkit-transform-origin: 100% 0;
 }
 .help__content[data-label]:before {
