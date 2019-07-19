@@ -1,7 +1,7 @@
 Stash pull request notifier
 ==============
 
-Chrome Extension to display pull request notifications from Atlassian stash
+Chrome Extension to display pull request notifications from Atlassian stash/bitbucket
 
 ## To Test 
 

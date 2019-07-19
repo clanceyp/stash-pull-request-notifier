@@ -26,6 +26,30 @@
 		.invalid {
 			 outline: 2px solid red;
 		}
+		[data-status]:after {
+			color: darkred;
+			font-style: italic;
+		}
+		[data-status^="4"]:after {
+			content: " (returned " attr(data-status) ")";
+		}
+		[data-status="401"]:after {
+			content: " (Unauthorized)";
+		}
+		[data-status="403"]:after {
+			content: " (Forbidden)";
+		}
+		[data-status="404"]:after {
+			content: " (page not found)";
+		}
+		[data-status^="5"]:after {
+			content: " (Server Error " attr(data-status) ")";
+		}
+		[data-status^="2"]:after,
+		[data-status^="3"]:after {
+			color: green;
+			content: " (" attr(data-status) ")";
+		}
 		@media screen and (max-width:400px){
 			#forkongithub,
 			#forkongithub a {display:block;padding: 0;}
