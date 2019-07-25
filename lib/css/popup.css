@@ -81,6 +81,7 @@ details[open] .item__content {
 details[open] p {
 	margin-top:0;
 }
+
 .left {
 	float:left;
 	width:50%;
@@ -203,3 +204,34 @@ footer {
 .is-author-visible-true.logged-in-true .author {
 	display: block;
 }
+
+
+/* basic auth stuff */
+label {
+    display: block;
+    margin: .2rem 0;
+}
+
+label span {
+    display: inline-block;
+    width: 4rem;
+}
+
+button, input {
+	border-radius: 3px;
+	border: 1px solid silver;
+	background-color: rgba(255,255,255,0.5);
+	width: 50%;
+	padding: 3px;
+	box-sizing: border-box;
+	transition: all 300ms;
+}
+
+input:focus {
+	background-color: rgba(255,255,255, 1);
+}
+
+.authenticate {
+	margin: 3px;
+}
+

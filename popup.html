@@ -12,28 +12,22 @@
         <script type="text/javascript" src="lib/js/manifest.js"></script>
         <script type="text/javascript" src="lib/js/popup.js"></script>
 	    <style>
-		    /*
-		    sadly implementing this animation
-		    stops the dynamic refresh and stalls
-		    the page in chrome 26.0.1410.65
-		    Will try it again in a later build
 		    #refreshIcon {
-			    -webkit-animation-duration: 3s;
-			    -webkit-animation-iteration-count: 0;
+			    animation-duration: 1s;
+			    animation-iteration-count: infinite;
 		    }
-			@-webkit-keyframes spin {
+			@keyframes spin {
 			  from {
-			    -webkit-transform: rotate(0deg)
+			    transform: rotate(0deg)
 			  }
 			  to {
-			   -webkit-transform: rotate(360deg)
+			   transform: rotate(360deg)
 			  }
 			}
 
 		    body.loading #refreshIcon {
-			    -webkit-animation-name: spin;
+			    animation-name: spin;
 		    }
-			*/
 			p.loading {
 				display: none;
 				text-align: center;

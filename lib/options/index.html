@@ -34,10 +34,10 @@
 			content: " (returned " attr(data-status) ")";
 		}
 		[data-status="401"]:after {
-			content: " (Unauthorized)";
+			content: " (Unauthorized, invalid credentials)";
 		}
 		[data-status="403"]:after {
-			content: " (Forbidden)";
+			content: " (Forbidden, please add basic auth via the popup from the extension icon)";
 		}
 		[data-status="404"]:after {
 			content: " (page not found)";
