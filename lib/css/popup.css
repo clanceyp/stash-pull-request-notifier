@@ -196,6 +196,9 @@ footer {
 .item--snoozed summary::-webkit-details-marker {
 	color: #800;
 }
+.item__count:empty:before {
+    content: "0";
+}
 .author { display: none }
 .author__heading {
 	border-top: 1px dashed #cecece;
