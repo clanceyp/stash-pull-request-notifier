@@ -208,6 +208,17 @@ footer {
 	display: block;
 }
 
+.comment-count:empty::before {
+	content: "0";
+}
+.merge-outcome::before {
+	content: "!";
+	color: red;
+}
+.merge-outcome.CLEAN::before {
+	content: "\2713";
+	color: green;
+}
 
 /* basic auth stuff */
 label {
